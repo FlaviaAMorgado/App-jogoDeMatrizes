@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculadora">
+
+    <!-- Inputs normais -->
+
+    <!-- Inputs desabilitados (a partir do 9) -->
+
+    <!-- Barra de Navegação -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calculadora" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Calcule duas matrizes 2x2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <EditText
+        android:id="@+id/b22"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <EditText
+        android:id="@+id/b21"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <EditText
+        android:id="@+id/b12"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <EditText
+        android:id="@+id/b11"
+        android:layout_width="63dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <EditText
+        android:id="@+id/a22"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <EditText
+        android:id="@+id/a12"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <EditText
+        android:id="@+id/a21"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <EditText
+        android:id="@+id/a11"
+        android:layout_width="63dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edittextredonda"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <EditText
+        android:id="@+id/c22"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextredonda"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <EditText
+        android:id="@+id/c21"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextredonda"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <EditText
+        android:id="@+id/c12"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextredonda"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <EditText
+        android:id="@+id/c11"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextredonda"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4D2464"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="649dp">
+
+        <ImageView
+            android:id="@+id/iconquiz"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconpergunta" />
+
+        <ImageView
+            android:id="@+id/iconcalculadora"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconcalculadora" />
+
+        <ImageView
+            android:id="@+id/iconhome"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconhome" />
+
+        <ImageView
+            android:id="@+id/iconmaterial"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconmaterial" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4D2464"
+        android:textSize="24dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4D2464"
+        android:textSize="24dp"
+        android:text="-"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

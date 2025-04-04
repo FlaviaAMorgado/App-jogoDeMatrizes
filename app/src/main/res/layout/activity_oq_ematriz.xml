@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Barra Superior -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/oqmatriz" />
+
+    <!-- Conteúdo Rolável -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView"
+        android:layout_above="@id/bottomBar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imagina que você tem uma tabela cheia de números, como uma planilha de uma lista de coisas que você quer organizar."
+                android:textSize="20sp"
+                android:justificationMode="inter_word"/>
+
+            <!--espaçamento-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Essa tabela é o que chamamos de matriz! Uma matriz é como um quadrado ou um retângulo de números, dispostos em linhas e colunas. Por exemplo, se você tiver 2 linhas e 3 colunas, você tem uma matriz de 2x3. Ou seja, 2 linhas e 3 colunas."
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra Inferior -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4D2464"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iconquiziconquiz"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconpergunta" />
+
+        <ImageView
+            android:id="@+id/iconcalculadora"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconcalculadora" />
+
+        <ImageView
+            android:id="@+id/iconhome"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconhome" />
+
+        <ImageView
+            android:id="@+id/iconmaterial"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconmaterial" />
+    </LinearLayout>
+
+</RelativeLayout>

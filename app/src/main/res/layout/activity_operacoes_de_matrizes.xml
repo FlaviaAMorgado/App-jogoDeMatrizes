@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Barra Superior -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/operacoes" />
+
+    <!-- Área Rolável -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView"
+        android:layout_above="@id/bottomBar"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agora vou te explicar como funciona cada uma das operações com matrizes."
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:background="@android:color/transparent"/>
+
+            <!-- Adição Matriz  -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Adição de Matrizes"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para somar duas matrizes, elas precisam ter o mesmo número de linhas e colunas."
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Você soma os números que estão nas mesmas posições nas duas matrizes."
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por exemplo: [1, 2, 3] — Essa é uma matriz linha 1x3, porque tem 1 linha e 3 colunas."
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <!-- Espaço extra -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <!-- Subtração de  Matriz -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Subtração de Matrizes"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A subtração de matrizes funciona da mesma forma que a adição, mas você subtrai os números nas mesmas posições."
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exemplo:\n[1]\n[2]\n[3]\nEssa é uma matriz coluna 3x1, porque tem 3 linhas e 1 coluna."
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <!-- Espaço extra -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Multiplicação de Matrizes -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Multiplicação de Matrizes"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para multiplicar duas matrizes, o número de colunas da primeira matriz deve ser igual ao número de linhas da segunda matriz"
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O resultado será uma nova matriz, onde cada elemento é o produto das linhas da primeira matriz com as colunas da segunda.
+"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exemplo:\n[1, 2, 3]\n[4, 5, 6]\n[7, 8, 9]\nEssa é uma matriz 3x3."
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <!-- Espaço extra -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <!-- Multiplicação de uma Matriz por 2 (ou um escalar) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Multiplicação de uma Matriz por 2 (ou um escalar)"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quando você multiplica uma matriz por um número (chamado de escalar), você multiplica todos os elementos da matriz por esse número."
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exemplo:\n[1, 0, 0]\n[0, 1, 0]\n[0, 0, 1]"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <!-- Espaço extra antes da barra inferior -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra Inferior -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4D2464"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iconquiz"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconpergunta" />
+
+        <ImageView
+            android:id="@+id/iconcalculadora"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconcalculadora" />
+
+        <ImageView
+            android:id="@+id/iconhome"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconhome" />
+
+        <ImageView
+            android:id="@+id/iconmaterial"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/iconmaterial" />
+    </LinearLayout>
+
+</RelativeLayout>
